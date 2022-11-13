@@ -1,0 +1,12 @@
+{
+  "name": "code-clipper",
+  "outputfilename": "code-clipper",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Andrew Collington",
+    "email": "andy@amnuts.com"
+  }
+}

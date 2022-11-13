@@ -1,0 +1,74 @@
+html {
+    background-color: #333333;
+    color: white;
+}
+
+body {
+    margin: 0;
+    color: white;
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+    url("assets/fonts/nunito-v16-latin-regular.woff2") format("woff2");
+}
+
+#app {
+    height: 100vh;
+    display: flex;
+}
+
+#app div.rendered  {
+    padding: 0 1rem 1rem 1rem;
+    flex: 1 1 auto;
+    overflow: auto;
+    flex-direction: column;
+}
+#app div.rendered > pre > code > pre {
+    padding: 0.75rem;
+    flex: 1;
+}
+#app div.rendered pre {
+    font-size: 110%;
+    margin: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+
+Name: Crayola's Outer Space
+Hex: #2C3639
+RGB: (44, 54, 57)
+CMYK: 0.228, 0.052, 0, 0.776
+
+Name: Feldgrau
+Hex: #48635A
+RGB: (72, 99, 90)
+CMYK: 0.272, 0, 0.090, 0.611
+
+Name: Asparagus
+Hex: #96A672
+RGB: (150, 166, 114)
+CMYK: 0.096, 0, 0.313, 0.349
+
+Name: Dark Vanilla
+Hex: #D6D0A5
+RGB: (214, 208, 165)
+CMYK: 0, 0.028, 0.228, 0.160
+
+Name: Beaver
+Hex: #A28364
+RGB: (162, 131, 100)
+CMYK: 0, 0.191, 0.382, 0.364
+
+*/
