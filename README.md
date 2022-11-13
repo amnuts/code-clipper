@@ -54,7 +54,7 @@ At some point I'd like to do the following:
 Right now it's a bit on the hacky side, so I'd hope to improve upon it
 - Allow for different themes to be used for the syntax highlighting \
 Right now you get Monaki Dark, and that's it!  But ideally I'd allow selecting more
-- MMake deleting a note a bit safer \
+- Make deleting a note a bit safer \
 There is no confirmation for delete, and once you click that delete button, the note is gone for good!  So I want to explore if it's possible to use the recycle bin when deleting
 - Explore more of the Wails configuration \
 I've only built and tested this on Windows 10, but would like to better improve the experience, try it on a Mac, and so on
