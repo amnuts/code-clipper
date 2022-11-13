@@ -2,17 +2,15 @@
 
 ## About
 
-This is a little tool I created for my own personal use, but if you like it then please feel free to fork and help improve.
+This tool is a note-taking, code clipper, desktop application.  I wanted to be able to make notes in Markdown, with an emphasis on being able to add code snippets, and have the Markdown rendered and the code shown with syntax highlighting.  I also wanted to have a play with [Wails](https://wails.io/), so this was the perfect opportunity!
 
-This tool is a little note-taking, code clipper thing.  I wanted to be able to make notes in Markdown, with an emphasis on being able to add code snippets, and have the Markdown rendered and the code shown with syntax highlighting.
-
-I also wanted to have a play with [Wails](https://wails.io/), so this was the perfect opportunity!
+I created for my own personal use and experimentation, but if you like it then please feel free to fork and help improve.
 
 ## How it works
 
 When you start typing a note it will save automatically.  Each note is an individual json file that's stored in a folder called `code-clipper` inside your home directory.
 
-Code tags will be automatically take from fenced code blocks, so if you use:
+Code tags will be automatically taken from fenced code blocks, so if you use:
 
 ~~~
 ```bash
@@ -24,7 +22,7 @@ It will record the tag `bash`.
 
 There's no limit the number of different fences you use in the same note - they'll all be turned into tags.
 
-If you want a title to the note, it'll automatically use the first header 1 when using the format:
+If you want to add a title to the note, it'll automatically use the first header-1 when using the format:
 
 ~~~
 # This will be the title
