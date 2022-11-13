@@ -36,6 +36,17 @@ When you select a note to view, it starts off in rendered mode.  To edit, click 
 
 To delete a note, select the one you want to remove and click the `delete` button... But use caution as there is no coming back from that - there is no undo or confirmation!
 
+## Screenshots
+
+### Rendered content
+![rendered](https://user-images.githubusercontent.com/684421/201500979-b5eed0f5-cb12-467d-9bfa-50ff6d6f2e7f.png)
+
+### Editing that content
+![editing](https://user-images.githubusercontent.com/684421/201500993-df3add5b-378f-4203-8fa0-4e3e00a8f2ec.png)
+
+### Filtering the list
+![filtered-list](https://user-images.githubusercontent.com/684421/201500996-106f37bc-c84a-49d3-96f9-dd0bfc23ed88.png)
+
 
 ## Future plans
 
