@@ -47,10 +47,18 @@ body {
     margin: 0;
 }
 #app div.rendered :not(pre) > code {
-    font-family: "Fantasque Sans Mono", "Nunito";
+    font-family: "Fantasque Sans Mono", "Nunito", sans-serif;
     background-color: #272822;
     padding: 0.25em 0.4em;
     color: #7db9d2;
+}
+#app div.rendered > p > a {
+    font-family: "Fantasque Sans Mono", "Nunito", sans-serif;
+    text-decoration: underline;
+    color: #A28364;
+}
+#app div.rendered > p > a:hover {
+    color: #D6D0A5;
 }
 #app div.rendered > blockquote {
     border-left: 3px solid #666;
