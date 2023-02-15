@@ -19,6 +19,14 @@ body {
     url("assets/fonts/nunito-v16-latin-regular.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+    url("assets/fonts/FantasqueSansMono-Regular.woff2") format("woff2");
+}
+
 #app {
     height: 100vh;
     display: flex;
@@ -38,6 +46,21 @@ body {
     font-size: 110%;
     margin: 0;
 }
+#app div.rendered :not(pre) > code {
+    font-family: "Fantasque Sans Mono", "Nunito";
+    background-color: #272822;
+    padding: 0.25em 0.4em;
+    color: #7db9d2;
+}
+#app div.rendered > blockquote {
+    border-left: 3px solid #666;
+    margin: 0;
+    padding: 0.5em 10px;
+}
+#app div.rendered > blockquote p {
+    display: inline;
+}
+
 
 .hidden {
     display: none !important;
