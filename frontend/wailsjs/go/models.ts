@@ -5,9 +5,9 @@ export namespace main {
 	    title: string;
 	    body: string;
 	    tags: string[];
-	    // Go type: time.Time
+	    // Go type: time
 	    created: any;
-	    // Go type: time.Time
+	    // Go type: time
 	    updated: any;
 	
 	    static createFrom(source: any = {}) {
