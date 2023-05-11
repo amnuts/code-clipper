@@ -5,6 +5,7 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
+	"fmt"
 	"github.com/PuerkitoBio/goquery"
 	"github.com/alecthomas/chroma"
 	"github.com/alecthomas/chroma/formatters/html"
@@ -59,8 +60,13 @@ func (a *App) startup(ctx context.Context) {
 	a.snippetsPath = a.storePath + "/snippets"
 
 	if _, err := os.Stat(a.storePath); os.IsNotExist(err) {
-		err := os.Mkdir(a.storePath, 0644)
-		checkErr(err, "Cannot create required directory")
+		err := os.Mkdir(a.storePath, 0755)
+		checkErr(err, fmt.Sprintf("Cannot create required '%s' directory", a.storePath))
+	}
+
+	if _, err := os.Stat(a.snippetsPath); os.IsNotExist(err) {
+		err := os.Mkdir(a.snippetsPath, 0755)
+		checkErr(err, fmt.Sprintf("Cannot create required '%s' directory", a.snippetsPath))
 	}
 
 	loadConfig(ctx, a.storePath)
